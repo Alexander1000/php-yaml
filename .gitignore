@@ -1,0 +1,11 @@
+configure
+.idea
+yaml.loT
+run-tests.php
+config.*
+Makefile
+Makefile.*
+libtool
+configure.*
+build/*
+autom4te.cache/*
