@@ -40,14 +40,14 @@ extern "C" {
 #endif
 
 #ifdef HAVE_CONFIG_H
-#	include "config.h"
+#include "config.h"
 #endif
 
 #include <php.h>
 #include <php_ini.h>
 #include <SAPI.h>
 #ifdef ZTS
-#	include "TSRM.h"
+#include "TSRM.h"
 #endif
 #include <ext/standard/info.h>
 #include <ext/standard/base64.h>
@@ -87,7 +87,7 @@ ZEND_END_MODULE_GLOBALS(yaml)
 
 ZEND_EXTERN_MODULE_GLOBALS(yaml)
 #ifdef ZTS
-#	define YAML_G(v) TSRMG(yaml_globals_id, zend_yaml_globals *, v)
+#define YAML_G(v) TSRMG(yaml_globals_id, zend_yaml_globals *, v)
 #else
 #	define YAML_G(v) (yaml_globals.v)
 #endif
